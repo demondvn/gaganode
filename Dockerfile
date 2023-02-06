@@ -16,7 +16,8 @@ RUN rm -rf /sbin/initctl && ln -s /sbin/initctl.distrib /sbin/initctl
 
 # Set as default user
 USER ubuntu
-
+EXPOSE 38590
+VOLUME /myApp
 WORKDIR /myApp
 COPY . .
 
